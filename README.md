@@ -84,10 +84,11 @@ curl "https://api.groq.com/openai/v1/chat/completions" \
            }
          ],
          "model": "gemma-7b-it",
-          "stream": false,
-         "stop": null
-       }'
+          "stream": false
+         }'
 ````
+
+
 
 
 
