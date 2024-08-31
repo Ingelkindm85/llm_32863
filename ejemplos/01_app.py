@@ -16,7 +16,11 @@ data = {
   "prompt": "Why is the sky blue?",
   "stream": False
   }
-response = requests.post(url, json = data)
+
+headers = {
+  "Content-Type": "application/json"
+}
+response = requests.post(url, json = data,headers = headers)
 
 response = json.loads(response.text)
 
